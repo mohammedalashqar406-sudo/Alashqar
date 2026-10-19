@@ -1,0 +1,22 @@
+
+name: Android Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show build environment
+        run: |
+          echo "================================"
+          echo "MOHAMED EL ASHQAR"
+          echo "ANDROID BUILD SYSTEM"
+          echo "================================"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Build environment is ready."
